@@ -27,6 +27,11 @@ const AccommodationsPage = () => {
     return <Navigate to="/" />;
   }
 
+  const AbrirForm =() => {
+    console.log("abriendo formulario para agregar nueva reservacion");
+    
+  }
+
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Sidebar */}
@@ -65,7 +70,8 @@ const AccommodationsPage = () => {
       <div className="ml-64 p-8">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-2xl font-semibold">Alojamientos</h1>
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+          {/* Main content */}
+          <button onClick={AbrirForm()} className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
             Nuevo Alojamiento
           </button>
         </div>
